@@ -1,0 +1,1029 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 June, 2021, 12:47:16 PM
+    Author     : Cheddarmedia
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html,
+body {
+    font-family: "Helvetica", sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    overflow-x: hidden;
+    width: 100%;
+    background: #fff;
+}
+p {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "Helvetica", sans-serif;
+    padding: 10px 0px;
+    /* color: #251f1f; */
+    color: white;
+    margin-bottom: 0px;
+}
+a,
+a:hover,
+a:focus {
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 40px;
+    font-family: "Helvetica", sans-serif;
+    color: #000;
+    line-height: 50px;
+}
+h2 {
+    font-size: 28px;
+    font-family: "Helvetica", sans-serif;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 30px;
+    color: #000;
+}
+h4 {
+    font-size: 20px;
+    color: #000;
+    line-height: 28px;
+}
+h5 {
+    font-size: 17px;
+    color: #000000;
+    font-weight: 400;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.3em;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0px;
+}
+strong {
+    font-weight: 600;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.space-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.space-bottom-30 {
+    padding-bottom: 30px;
+}
+.space-top-30 {
+    padding-top: 30px;
+}
+.space-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.space-bottom-50 {
+    padding-bottom: 50px;
+}
+.space-top-50 {
+    padding-top: 50px;
+}
+.space-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.space-bottom-40 {
+    padding-bottom: 40px;
+}
+.space-top-40 {
+    padding-top: 40px;
+}
+.space-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.space-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.space-bottom-80 {
+    padding-bottom: 80px;
+}
+.space-top-80 {
+    padding-top: 80px;
+}
+
+.gap-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+}
+.gap-bottom-30 {
+    margin-bottom: 30px;
+}
+.gap-top-30 {
+    margin-top: 30px;
+}
+.gap-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: 100%;
+}
+.gap-bottom-50 {
+    margin-bottom: 50px;
+}
+.gap-top-50 {
+    margin-top: 50px;
+}
+.gap-80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: inline-block;
+    width: 100%;
+}
+.gap-bottom-80 {
+    margin-bottom: 80px;
+}
+.gap-top-80 {
+    margin-top: 80px;
+}
+.space-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: inline-block;
+    width: 100%;
+}
+.space-bottom-100 {
+    padding-bottom: 100px;
+}
+.space-top-100 {
+    padding-top: 100px;
+}
+.space-top-15 {
+    padding-top: 15px;
+}
+
+.max-850 {
+    max-width: 850px;
+    margin: 0px auto;
+}
+.header-section {
+    min-height: 85px;
+    background-color: #f5f5f5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.banner-image {
+    width: 100%;
+}
+.view-tablet {
+    display: none;
+}
+.view-mobile {
+    display: none;
+}
+.footer-section {
+    min-height: 120px;
+    background-color: #f5f5f5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+span.ti-plus {
+    color: #e83c45;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.tab-section nav {
+    margin-bottom: 30px;
+    position: relative;
+}
+.add-new {
+    width: 100%;
+    padding: 15px 0px 15px 25px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/plus.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: left 16px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: none;
+    background: transparent;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+.nav-tabs .nav-link {
+    margin-bottom: 0px;
+    border: 0px !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #000000;
+}
+.nav.nav-tabs .nav-item {
+    padding: 10px 0px;
+    margin-right: 20px;
+    position: relative;
+}
+.nav.nav-tabs .nav-item:last-child {
+    margin-right: 0px;
+}
+.nav-tabs .nav-link.active:after {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e83c45;
+}
+.news-updates {
+    position: relative;
+}
+.news-updates .owl-dots {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+.news-updates .owl-theme .owl-dots .owl-dot span {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.news-updates .owl-theme .owl-dots .owl-dot.active span,
+.news-updates .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #fff;
+}
+.news-updates-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+    z-index: 1111;
+}
+.white-text {
+    color: #fff;
+}
+.news-updates .item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            from(#000000),
+            color-stop(16%, #1e1e1ece),
+            color-stop(34%, #1f1f1fcc),
+            color-stop(50%, #3c3c3c4d),
+            color-stop(73%, #5050500d),
+            color-stop(86%, #52525206),
+            to(#54545400)
+        ) 0% 0% no-repeat padding-box;
+    background: transparent -webkit-linear-gradient(
+            bottom,
+            #000000 0%,
+            #1e1e1ece 16%,
+            #1f1f1fcc 34%,
+            #3c3c3c4d 50%,
+            #5050500d 73%,
+            #52525206 86%,
+            #54545400 100%
+        ) 0% 0% no-repeat padding-box;
+    background: transparent -moz-linear-gradient(
+            bottom,
+            #000000 0%,
+            #1e1e1ece 16%,
+            #1f1f1fcc 34%,
+            #3c3c3c4d 50%,
+            #5050500d 73%,
+            #52525206 86%,
+            #54545400 100%
+        ) 0% 0% no-repeat padding-box;
+    background: transparent -o-linear-gradient(
+            bottom,
+            #000000 0%,
+            #1e1e1ece 16%,
+            #1f1f1fcc 34%,
+            #3c3c3c4d 50%,
+            #5050500d 73%,
+            #52525206 86%,
+            #54545400 100%
+        ) 0% 0% no-repeat padding-box;
+    background: transparent
+        linear-gradient(
+            0deg,
+            #000000 0%,
+            #1e1e1ece 16%,
+            #1f1f1fcc 34%,
+            #3c3c3c4d 50%,
+            #5050500d 73%,
+            #52525206 86%,
+            #54545400 100%
+        )
+        0% 0% no-repeat padding-box;
+    z-index: 1;
+}
+.date-time {
+    background: #e83c45;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 85px;
+    margin-right: 20px;
+    height: 85px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.date-time p {
+    padding: 0px 0px;
+}
+.event-content {
+    display: inline-block;
+}
+.event-list-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+p.day {
+    font-size: 32px;
+    line-height: 38px;
+}
+.event-content {
+    display: inline-block;
+    width: -webkit-calc(100% - 105px);
+    width: -moz-calc(100% - 105px);
+    width: calc(100% - 105px);
+}
+p.event-title {
+    padding: 0px 0px;
+    font-size: 16px;
+}
+p.event-time {
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 7px 0px;
+}
+p.event-address {
+    padding: 0px 0px;
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+}
+.see-all {
+    color: #e83c45;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.project-list-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+.project-content {
+    display: inline-block;
+    width: -webkit-calc(100% - 105px);
+    width: -moz-calc(100% - 105px);
+    width: calc(100% - 105px);
+}
+.project-title {
+    padding: 0px 0px;
+    font-size: 16px;
+    min-height: 70px;
+    line-height: 24px;
+}
+.project-time {
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 0px;
+}
+.project-address {
+    padding: 0px 0px;
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+}
+.project-image {
+    width: 120px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.card {
+    border: none;
+    background-color: transparent;
+}
+.card-header {
+    padding: 0px;
+    background: transparent;
+    border-radius: 0px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: none;
+}
+.accordion > .card > .card-header {
+    margin-bottom: 0px;
+}
+.card-body {
+    padding: 15px 0px 30px;
+}
+.card .card-header {
+    padding: 0px 0px;
+}
+.card .card-header h4 {
+    padding: 15px 0px;
+    position: relative;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    -webkit-appearance: none;
+}
+.strategy {
+    margin-top: 15px;
+}
+.accordion .card:last-child .card-header {
+    border-bottom: 1px solid #e5e5e5;
+}
+.card .card-header h4[aria-expanded="false"]:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 20px;
+    background-image: url(https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/down-arrow.png);
+    z-index: 1;
+    height: 20px;
+    -webkit-background-size: 20px 20px;
+    -moz-background-size: 20px;
+    -o-background-size: 20px;
+    background-size: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.card .card-header h4[aria-expanded="true"]:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 20px;
+    background-image: url(https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/down-arrow.png);
+    z-index: 1;
+    height: 20px;
+    -webkit-background-size: 20px 20px;
+    -moz-background-size: 20px;
+    -o-background-size: 20px;
+    background-size: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.add-new img {
+    width: 13px;
+    margin-right: 10px;
+}
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+.meet-team {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.home-main #meet-team p.client-text {
+    color: #ababab;
+    font-size: 16px;
+}
+.home-main #meet-team2 p.client-text {
+    font-size: 16px;
+}
+.green {
+    float: right;
+    max-width: 220px;
+}
+@media screen and (min-width: 375px) and (max-device-width: 415px) {
+    .green {
+        max-width: initial !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-device-width: 915px) {
+    .green {
+        max-width: 211px !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-device-width: 1150px) {
+    .green {
+        max-width: 256px;
+    }
+    .blue,
+    .orange {
+        margin: 0 auto;
+        max-width: 220px;
+    }
+}
+.blue {
+    margin: 0px auto;
+    max-width: 220px;
+}
+.graph-part {
+    padding: 15px 0px;
+    margin-top: 15px;
+}
+.filter {
+    width: 100%;
+    position: relative;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.filter > div {
+    width: 33.33%;
+    display: inline-block;
+}
+.filter .see-all {
+    position: relative;
+    text-align: right;
+    bottom: 0px;
+}
+.category {
+    background-image: url(https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/climate-layout-w.jpg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-position: left center;
+}
+.category img {
+    max-width: 10px;
+    margin-left: 5px;
+}
+.dropdown-item {
+    padding: 13px 0px;
+    border-top: 1px solid #e5e5e5;
+}
+.dropdown-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+.dropdown-list {
+    margin-top: 15px;
+    overflow-y: scroll;
+    max-height: 230px;
+}
+/*
+ *  STYLE 2
+ */
+
+.dropdown-list::-webkit-scrollbar-track {
+    /*  -webkit-box-shadow: inset 0 0 6px #BCBCBC;
+      border-radius: 10px;
+      background-color: #fff;*/
+}
+
+.dropdown-list::-webkit-scrollbar {
+    width: 9px;
+    background-color: transparant;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px #bcbcbc;
+    background-color: #bcbcbc;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+#meet-team {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 15px;
+}
+
+.client-icon {
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.client-box {
+    display: inline-flex;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
+}
+.client-content {
+    margin-left: 25px;
+}
+.client-text {
+    color: #989898;
+    font-size: 19px;
+    line-height: 27px;
+    padding-bottom: 0px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #bcbcbc;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: transparent;
+    border: 1px solid #bcbcbc;
+}
+#meet-team .owl-dots {
+    padding-right: 80px;
+}
+#graph-slider.owl-theme .owl-dots {
+    margin-top: 35px !important;
+}
+.planet {
+    background-image: url("https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/Planet.png");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.product {
+    background-image: url("https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/roduct.png");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.people {
+    background-image: url("https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/people.png");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-with-image h1,
+.box-with-image ul li a {
+    color: #fff;
+}
+
+.box-with-image {
+    padding: 60px 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.planet:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 160, 233, 0.9);
+}
+.product:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(125, 206, 115, 0.9);
+}
+.people:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 114, 70, 0.9);
+}
+.box-with-image ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.box-with-image ul li a {
+    color: #fff;
+    font-size: 22px;
+    line-height: 32px;
+    position: relative;
+}
+.box-with-image ul li:last-child {
+    margin-right: 0px;
+}
+.box-with-image h1 {
+    margin-bottom: 20px;
+}
+.box-with-image ul li a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -7px;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+}
+.section-two .col-md-6.col-lg-4 {
+    margin-bottom: 40px;
+}
+
+/***************Dark Version**********************/
+body.dark-version {
+    background-color: #1b2a55;
+}
+body.dark-version {
+    color: #fff;
+}
+.dark-version h1 .dark-version h2,
+.dark-version h3,
+.dark-version h4,
+.dark-version h5,
+.dark-version h6,
+.dark-version p,
+.dark-version a,
+.dark-version a:hover,
+.dark-version a:focus {
+    color: #fff;
+}
+.dark-version .owl-theme .owl-dots .owl-dot.active span,
+.dark-version .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+}
+.dark-version .nav-tabs .nav-item.show .nav-link,
+.dark-version .nav-tabs .nav-link.active {
+    color: #fff;
+}
+.dark-version .header-section p,
+.dark-version .footer-section p {
+    color: #000000;
+}
+.dark-version .dropdown-item:focus,
+.dark-version .dropdown-item:hover {
+    color: #fff;
+}
+
+.dark-version .dropdown-list::-webkit-scrollbar {
+    width: 9px;
+    background-color: transparant;
+}
+
+.dark-version .dropdown-list::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    background-color: #fff;
+}
+.dark-version .category {
+    background-image: url(https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/category-dark.png);
+}
+.filter.two-box > div {
+    width: 50%;
+}
+.filter.two-box {
+    margin-top: 15px;
+}
+.team-box {
+    display: inline-flex;
+    align-items: flex-start;
+    margin: 20px 0px;
+    width: 100%;
+}
+.team-icon {
+    -ms-flex: 0 0 18%;
+    flex: 0 0 18%;
+    max-width: 18%;
+}
+.team-content {
+    margin-left: 20px;
+}
+.team-content p {
+    font-size: 16px;
+    padding: 5px 0px;
+}
+select {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    position: relative;
+    background-image: url("https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/polygon-11@1x.png");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+}
+select::-ms-expand {
+    display: none;
+}
+/*************************Home page **************************/
+.organisation-image {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 35px;
+    display: inline-block;
+}
+.organisation-image img {
+    max-width: 120px;
+}
+.home-main h1 {
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.home-main {
+    /* max-width: 1000px; */
+    margin: 0px auto;
+}
+.orange h1,
+.orange h4 {
+    color: #e87246;
+}
+.blue h1,
+.blue h4 {
+    color: #449be2;
+}
+.green h1,
+.green h4 {
+    color: #6eba7b;
+}
+.discription-box {
+    max-width: 220px;
+    /*    margin-left: 10px;*/
+    min-height: 250px;
+}
+.discription-box p {
+    line-height: 23px;
+}
+.home-outer {
+    background-image: url("https://cheddarmediaglobal.sharepoint.com/sites/Sustainability-SCC/SiteAssets/Homepage/img/ocean bg.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.gray-box-outer {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.gray-box {
+    background-color: #f8f8f8;
+    display: inline-block;
+}
+.gray-box {
+    background-color: #f8f8f8;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 220px;
+    height: 220px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.gray-image {
+    margin-bottom: 30px;
+}
+.gray-image img {
+    max-width: 85px;
+    max-height: 65px;
+}
+.gray-box h4 {
+    /* max-width: 100px; */
+    text-align: center;
+}
+.home-section-four {
+    background-color: #fff;
+}
+.home-section-four p,
+.home-section-four h3,
+.home-section-four h4,
+.home-section-four .card .card-header h4 {
+    color: #000;
+}
+
+.dark-version .home-section-four .owl-theme .owl-dots .owl-dot.active span,
+.dark-version .home-section-four .owl-theme .owl-dots .owl-dot:hover span {
+    background: #bcbcbc;
+}
+
+.gray-box-outerActive:hover {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+    position: relative;
+    -webkit-transform: translateY(0);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scale(1.25, 1.25);
+}
+
+.organisation-image:hover {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+    position: relative;
+    -webkit-transform: translateY(0);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scale(1.25, 1.25);
+}
+
+.gray-box-outerActive {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 70px;
+}
